@@ -2,18 +2,10 @@
 
 Lightweight, zero-dependency TypeScript SDK for the Visage B2B API. Verify AI likeness licenses, browse model rosters, track usage events, and integrate rights compliance into your pipeline.
 
-> **Note:** `npm install visage-sdk` is a placeholder — the npm package is coming soon. For now, import directly from `src/sdk/index.ts`.
-
 ## Installation
 
 ```bash
 npm install visage-sdk
-```
-
-Or import directly from the source:
-
-```ts
-import { Visage, createVisageClient } from '@/sdk';
 ```
 
 ## Quick Start
