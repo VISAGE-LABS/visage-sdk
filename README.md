@@ -7,7 +7,6 @@ Lightweight, zero-dependency TypeScript SDK for the Visage B2B API. Verify AI li
 ## Installation
 
 ```bash
-# npm package coming soon
 npm install visage-sdk
 ```
 
