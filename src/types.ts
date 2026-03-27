@@ -38,6 +38,7 @@ export interface RightsSummary {
 export interface LicenseVerifyResponse {
   status: 'ACTIVE' | 'REVOKED';
   license_key: string;
+  model_sku: string | null;
   issued_at: string;
   deal_created_at: string;
   buyer_org_name: string;
@@ -79,6 +80,8 @@ export interface UsageEventResponse {
 
 export interface Model {
   id: string;
+  sku: string | null;
+  base_rate_usd: number | null;
   display_name: string;
   verified: boolean;
   allowed_media: string[];

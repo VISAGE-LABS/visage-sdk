@@ -88,6 +88,11 @@ export class Visage {
     return this._fetch<PaginatedResponse<Model>>('GET', `/b2b-v1-models${qs ? `?${qs}` : ''}`, { requestId });
   }
 
+  async getModelBySku(sku: string, requestId?: string): Promise<Model> {
+    const encoded = encodeURIComponent(sku);
+    return this._fetch<Model>('GET', `/b2b-v1-models/${encoded}`, { requestId });
+  }
+
   async listLicenses(options?: ListOptions, requestId?: string): Promise<PaginatedResponse<License>> {
     const params = new URLSearchParams();
     if (options?.status) params.set('status', options.status);

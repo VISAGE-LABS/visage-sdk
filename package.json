@@ -48,6 +48,6 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "visage-sdk": "^1.0.0"
+    "visage-sdk": "^1.0.1"
   }
 }
